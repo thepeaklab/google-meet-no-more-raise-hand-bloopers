@@ -1,0 +1,13 @@
+{
+  "name": "Google Meet: No More Raise Hand Bloopers",
+  "description": "Oops, Not Again! Rearranging Google Meet buttons to avoid accidental 'Raise Hand' drama",
+  "version": "1.0",
+  "manifest_version": 3,
+  "content_scripts": [
+    {
+      "matches": ["https://meet.google.com/*"],
+      "js": ["inject.js"]
+    }
+  ],
+  "host_permissions": ["<all_urls>"]
+}
